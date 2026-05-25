@@ -25,9 +25,10 @@ button {
 }
 
 /*HERO*/
+
 .hero {
 
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("../images/Header\ picture.png");
     background-size: cover;
     background-position: center;
@@ -41,23 +42,37 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    transform: translateY(-40px);
+    padding-top: 14rem;
+    gap: 12px;
+    margin-bottom: 8px;
+
 
 }
-.hero-content h1{
+
+.hero-content h1 {
     font-size: 48px;
     letter-spacing: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
-.hero-content h2 {
-    font-size: 22px;
-    letter-spacing: 6.82px;
+.hero-content .subtitle {
+    font-size: 14px;
+    letter-spacing: 2.8px;
     line-height: 26px;
+    margin-top: -10px;
+    margin-bottom: 18px;
 
+
+}
+
+.scroll-down {
+    color: white;
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
 }
 
 .navbar {
@@ -91,7 +106,7 @@ button {
 
 }
 
-.bottom-nav{
+.bottom-nav {
     background-color: #5474fd;
     display: flex;
     justify-content: center;
@@ -101,34 +116,53 @@ button {
 
     margin-top: -4px;
 
-    
-    
+
+
 }
-.bottom-nav ul{
+
+.bottom-nav ul {
     display: flex;
     gap: 30px;
     list-style: none;
 }
-.bottom-nav a{
+
+.bottom-nav a {
     color: white;
     text-decoration: none;
-    font-size:14px ;
+    font-size: 14px;
 }
-.bottom-nav h1{
+
+.bottom-nav a.black-link {
+    color: black;
+
+}
+
+.bottom-nav h1 {
     font-size: 24px;
     letter-spacing: 2.4px;
-    
+
 }
 
 .search-bar {
+
     display: flex;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .search-bar input {
-    width: 500px;
-    padding: 20px;
+    width: 653px;
+    height: 63px;
+    padding: 0 20px 0 35px;
     border: none;
+
+
+
+}
+
+.search-bar input::placeholder {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: #999999;
 }
 
 .search-bar button {
@@ -137,9 +171,11 @@ button {
 
 .why-us {
     background-image: url("../images/Rectangle\ 41444\ \(2\).png");
+    background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
-    background-position: center;
-    padding: 100px 80px;
+    background-position: left bottom;
+    padding: 6rem 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,4 +199,149 @@ button {
 
 .why-us-images img:first-child {
     margin-bottom: 20px;
+}
+
+.how-it-works {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333333;
+    position: relative;
+
+
+    padding: 5rem;
+
+}
+
+.icon-card {
+    text-align: center;
+    color: white;
+
+
+}
+
+.icon-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.shape {
+    width: 33%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 5rem;
+}
+
+.features-one {
+    background-image: url("../images/Rectangle\ 414\ 45\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+}
+
+.feature-card-one {
+    color: white;
+    width: 35rem;
+    padding: 3rem;
+    background-color: #232323;
+}
+
+.features-two {
+    background-image: url("../images/card\ two\ img.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 8rem;
+    justify-content: flex-end;
+}
+
+.feature-card-two {
+    color: white;
+    background-color: #232323;
+    width: 35rem;
+    padding: 3rem;
+    background-color: #232323;
+}
+
+.testimonial {
+    background-image: url("../images/Rectangle\ 4142\ 1\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+}
+
+.testimonial h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 36px;
+}
+
+.testimonial-box {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-box img {
+    width: 30%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 3rem;
+    width: 70%;
+    color: white;
+
+}
+
+.testimonial-text p {
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.footer {
+    text-align: center;
+    padding: 4rem;
+    background-color: #232323;
+}
+
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 2rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-media img {
+    object-fit: contain;
+    width: 40px;
+    height: 26px;
+}
+
+.social-media img hover {
+    transform: scale(1.1);
 }
